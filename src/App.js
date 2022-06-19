@@ -22,11 +22,6 @@ const App = () => {
 
   const [tasks, setTasks] = useState(getTasksFromLocalStorage());
 
-  useEffect(() => {
-    const filter = document.querySelector('.filter-tasks-container')
-    filter.style.display = tasks.length > 0 ? 'flex' : 'none';
-  }, [tasks.length])
-
   const handleTaskAddition = (taskTitle, description) => {
     if (description === '') description = taskTitle;
     const newTasks = [...tasks, {
