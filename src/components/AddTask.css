@@ -1,0 +1,71 @@
+input::placeholder, textarea::placeholder{
+    font-style: italic;
+}
+
+.add-task-container{
+    margin: 15px 0;
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+}
+
+#add-task-button,.add-task-description-input{
+    display: none;
+}
+
+.add-task-input{
+    height: 40px;
+}
+
+.add-task-description-input, .cancel-add-task-button{
+    margin-top: 10px;
+}
+
+.add-task-input, .add-task-description-input, .cancel-add-task-button{
+    max-width: 280px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    flex: 0 60%;
+    background-color: #444;
+    color: #eee;
+    font-size: 16px;
+}
+
+textarea::-webkit-scrollbar{
+    background-color: rgb(45, 45, 45);
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgb(127, 255, 0);
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(63, 126, 0);
+}
+
+.add-task-button-container{
+    margin-left: 10px;
+    flex: 1;
+}
+
+.cancel-add-task-button{
+    background-color: rgb(255, 0, 0);
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    max-width: 280px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.cancel-add-task-button:hover{
+    transition:all 0.3s ease;
+    background-color: #444;
+    color: rgb(255, 0, 0);
+}

@@ -1,0 +1,27 @@
+.task-details-container{
+    background: #444;
+    margin: 15px 0;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #eee;
+    border-radius: 5px;
+}
+
+.task-details-container h2{
+    max-width: 100%;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+    color: chartreuse;
+}
+
+.task-details-container p{
+    white-space: normal;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.back-button-container{
+    width: 30%;
+    margin-top: 10px;
+}

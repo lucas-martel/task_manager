@@ -1,0 +1,75 @@
+.task-container{
+    background-color: #444;
+    margin: 8px 0px;
+    padding: 15px 20px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    color: #eee;
+    align-items: center;
+}
+
+.task-title{
+    cursor: pointer;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.see-task-details-button, .remove-task-button{
+    margin-right: 5px;
+    background-color: #444;
+    border: none;
+    font-size: 24px;
+    color: chartreuse;
+    transition: color 100ms linear;
+}
+
+.see-task-details-button, .remove-task-button, .task-title{
+    position: relative;
+}
+
+.see-task-details-button:hover, .remove-task-button:hover{
+    color: #eee;
+}
+
+.ballon-description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 700%;
+    max-height: 300%;
+    word-wrap: break-word;
+    background-color: rgba(18, 38, 0, 0.748);
+    color: #fff;
+    white-space: normal;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+
+}
+.see-task-details-button:hover .ballon-description{
+    top: -150%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.remove-task-button:hover .ballon-description{
+    top: -150%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.task-title:hover .ballon-description{
+    top: -150%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.text-description{
+    font-size: 0.3em;
+}
+
+

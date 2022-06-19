@@ -1,0 +1,34 @@
+.filter-tasks-container{
+    display: flex;
+    height: 30px;
+    width: 80%;
+    margin: 0.3em auto;
+    background: rgb(26, 26, 26);
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+}
+
+span, .filter-tasks-container option::-ms-value{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.select-item{
+    flex-basis: 50%;
+}
+
+select{
+    background-color: rgb(42, 85, 0);
+    border-radius: 7px;
+    color: #fff;
+}
+
+span{
+    font-size: 0.8em;
+    user-select: none;
+}
+
+span{
+    color: rgb(255, 255, 255);
+}
