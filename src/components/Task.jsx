@@ -10,17 +10,15 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
         navigate(`/${task.title}/${task.description}`)
     }
 
-    const getStatusTask = () =>{
-        return task.completed ? 'desmarcar' : 'marcar como completa';
-    }
-
     return (
-        <div className='task-container' style={task.completed ? { borderLeft: "6px solid chartreuse" } : {}}>
-            <div className='task-title' onClick={() => { handleTaskClick(task.id) }}>
+        <div className='task-container'>
+            <div
+                onClick={()=>handleTaskClick(task.id)}
+                style= {{ backgroundColor: task.completed ? 'chartreuse' : 'rgb(42,42,42)'}}
+                className='checkbox-task' id={task.id}>
+            </div>
+            <div className='task-title'>
                 {task.title}
-                <div className="ballon-description">
-                        <p className='text-description'>{getStatusTask()}</p>
-                </div>
             </div>
             <div className='buttons-container'>
                 <button className='see-task-details-button' onClick={handleTaskDetailsClick}> <CgInfo />

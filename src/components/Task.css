@@ -10,7 +10,7 @@
 }
 
 .task-title{
-    cursor: pointer;
+    user-select: none;
     max-width: 80%;
     word-wrap: break-word;
 }
@@ -70,6 +70,15 @@
 
 .text-description{
     font-size: 0.3em;
+}
+
+.checkbox-task{
+    min-width: 1em;
+    min-height: 1em;
+    border-radius: 1em;
+    border: 2px solid black;
+    background-color: rgb(42, 42, 42);
+    border-style: 2px solid #000;
 }
 
 
