@@ -14,8 +14,11 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
         <div className='task-container'>
             <div
                 onClick={()=>handleTaskClick(task.id)}
-                style= {{ backgroundColor: task.completed ? 'chartreuse' : 'rgb(42,42,42)'}}
-                className='checkbox-task' id={task.id}>
+                className='checkbox-task' id={task.id}
+            >
+                <div
+                    style= {{ backgroundColor: task.completed ? 'chartreuse' : 'rgb(42,42,42)'}} 
+                    className='checkbox-task-intern'></div>
             </div>
             <div className='task-title'>
                 {task.title}
